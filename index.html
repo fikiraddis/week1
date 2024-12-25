@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="mass">Mass</label>
+    <input id="mass"/>
+    <label for="height">Height</label>
+    <input id="height"/>
+    <button onclick="calcualte()">calculate</button>
+    <div>
+        answer:<span id="answer"></span>
+    </div>
+    <script>
+        let mass= Number( document.getElementById('mass').value )
+        let height=Number( document.getElementById('height').value)
+        let calcualte=()=>{
+            let answer=mass/height**2
+            console.log(mass, height)
+            document.getElementById('answer').innerHTML=answer
+        }
+        
+    </script>
+</body>
+</html>
